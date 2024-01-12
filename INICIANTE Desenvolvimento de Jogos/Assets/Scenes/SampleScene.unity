@@ -578,8 +578,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.002124399, y: 0.14391379}
-  m_Size: {x: 0.102945834, y: 0.2920536}
+  m_Offset: {x: -0.002124399, y: 0.14532062}
+  m_Size: {x: 0.102945834, y: 0.28923994}
   m_Direction: 0
 --- !u!4 &2025607555
 Transform:
@@ -631,3 +631,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floorCollider: {fileID: 461678063}
+  skin: {fileID: 1311745715}
