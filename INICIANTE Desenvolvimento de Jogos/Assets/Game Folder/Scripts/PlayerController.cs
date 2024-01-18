@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
             dashTime = 0;
             skin.GetComponent<Animator>().Play("Player_dash", -1);
             rb.velocity = Vector2.zero;
-            rb.AddForce(new Vector2(skin.localScale.x * 150, 0));
+            rb.AddForce(new Vector2(skin.localScale.x * 800, 0));
         }
 
         //ATAQUE
@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
             rb.velocity = Vector2.zero;
             floorCollider.GetComponent<FloorCollider>().canJump = false;
             //AO TERMINAR O JOGO VOLTAR PARA AULA 6 APLICAR CORREÇÃO NO JUMP
-            rb.AddForce(new Vector2(0, 150));
+            rb.AddForce(new Vector2(0, 1000));
         }
         vel = new Vector2(Input.GetAxisRaw("Horizontal"), rb.velocity.y);
 
@@ -73,6 +73,7 @@ public class PlayerController : MonoBehaviour
         if(Input.GetAxisRaw("Horizontal") != 0)
         {
             skin.localScale = new Vector3(Input.GetAxisRaw("Horizontal"), 1, 1);
+            vel = new Vector2(Input.GetAxisRaw("Horizontal") * 8, rb.velocity.y);
             skin.GetComponent<Animator>().SetBool("PlayerRun", true);
         }
         else
