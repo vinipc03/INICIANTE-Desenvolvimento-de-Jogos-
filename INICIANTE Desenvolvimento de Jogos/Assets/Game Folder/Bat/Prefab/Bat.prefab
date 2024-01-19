@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8884862874035624346}
   - component: {fileID: 8884862874035624348}
   - component: {fileID: 8884862874035624349}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Skin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 8884862874035624347}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 3.9255}
   m_Children: []
   m_Father: {fileID: 8884862874976309205}
   m_RootOrder: 0
@@ -69,8 +69,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -777452541
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 4754826937556007664, guid: 4c4c2a84d7fbf7a42bcb0900592fa4dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -115,7 +115,7 @@ GameObject:
   - component: {fileID: 8884862874976309203}
   - component: {fileID: 8884862874976309204}
   - component: {fileID: 8884862874976309207}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bat
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -129,9 +129,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8884862874976309200}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.476, y: 0.543, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 6, y: 6, z: 1}
   m_Children:
   - {fileID: 8884862874035624346}
   m_Father: {fileID: 0}

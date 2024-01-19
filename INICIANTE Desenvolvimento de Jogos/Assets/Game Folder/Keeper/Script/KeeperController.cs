@@ -41,12 +41,12 @@ public class KeeperController : MonoBehaviour
         {
             skin.localScale = new Vector3(1, 1, 1);
 
-           if(Vector2.Distance(transform.position, b.position) < 0.1f)
+           if(Vector2.Distance(transform.position, b.position) < 0.5f)
             {
                 goRight = false;
             }
            
-            transform.position = Vector3.MoveTowards(transform.position, b.position, 0.2f * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, b.position, 3f * Time.deltaTime);
         }
         else
         {
@@ -55,7 +55,7 @@ public class KeeperController : MonoBehaviour
             {
                 goRight = true;
             }
-            transform.position = Vector3.MoveTowards(transform.position, a.position, 0.2f * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, a.position, 3f * Time.deltaTime);
         }
 
       

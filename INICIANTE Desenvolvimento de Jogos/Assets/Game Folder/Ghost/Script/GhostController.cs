@@ -31,7 +31,7 @@ public class GhostController : MonoBehaviour
                 transform.position = a.position;
             }
 
-            transform.position = Vector3.MoveTowards(transform.position, b.position, 1f * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, b.position, 8f * Time.deltaTime);
         }
         else
         {
@@ -40,7 +40,7 @@ public class GhostController : MonoBehaviour
             {
                 transform.position = b.position;
             }
-            transform.position = Vector3.MoveTowards(transform.position, a.position, 1f * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, a.position, 8f * Time.deltaTime);
         }
     }
 

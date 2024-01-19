@@ -119,6 +119,15 @@ TextureImporter:
   - first:
       213: 4031399933047166486
     second: Decoration_38
+  - first:
+      213: 2819730956193035774
+    second: Decoration_39
+  - first:
+      213: 8971082041390250704
+    second: Decoration_40
+  - first:
+      213: -8250511426547991113
+    second: Decoration_41
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -412,7 +421,7 @@ TextureImporter:
         serializedVersion: 2
         x: 240
         y: 67
-        width: 15
+        width: 16
         height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -685,7 +694,7 @@ TextureImporter:
         serializedVersion: 2
         x: 128
         y: 97
-        width: 32
+        width: 16
         height: 13
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1024,7 +1033,7 @@ TextureImporter:
         width: 3
         height: 39
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1032,6 +1041,69 @@ TextureImporter:
       bones: []
       spriteID: 6165fcc31e862f730800000000000000
       internalID: 4031399933047166486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decoration_39
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 97
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5fe067d52b12720800000000000000
+      internalID: 2819730956193035774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decoration_40
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 112
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dab3f7f59faf7c70800000000000000
+      internalID: 8971082041390250704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decoration_41
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 112
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd3e45129b408d80800000000000000
+      internalID: -8250511426547991113
       vertices: []
       indices: 
       edges: []
