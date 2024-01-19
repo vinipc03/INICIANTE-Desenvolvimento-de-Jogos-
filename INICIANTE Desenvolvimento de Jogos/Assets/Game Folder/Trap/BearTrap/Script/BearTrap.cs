@@ -31,7 +31,7 @@ public class BearTrap : MonoBehaviour
             
             collision.GetComponent<PlayerController>().skin.GetComponent<Animator>().SetBool("PlayerRun", false);
             collision.GetComponent<PlayerController>().skin.GetComponent<Animator>().Play("Player_Idle", -1);
-            collision.transform.GetComponent<Character>().life--;
+            collision.transform.GetComponent<Character>().PlayerDamage(1);
 
             GetComponent<BoxCollider2D>().enabled = false;
             

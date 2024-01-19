@@ -22,7 +22,7 @@ public class SpikeTrap1 : MonoBehaviour
         {
             collision.transform.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             collision.transform.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 180));
-            collision.transform.GetComponent<Character>().life--;
+            collision.transform.GetComponent<Character>().PlayerDamage(1);
         }
     }
 }

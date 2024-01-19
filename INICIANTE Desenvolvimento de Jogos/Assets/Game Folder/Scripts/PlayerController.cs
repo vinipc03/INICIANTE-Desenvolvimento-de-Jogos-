@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
         //MORTE
         if(GetComponent<Character>().life <= 0)
         {
+            rb.simulated = false;
             this.enabled = false;
         }
 
