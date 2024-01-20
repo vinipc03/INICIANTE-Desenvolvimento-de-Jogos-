@@ -8,6 +8,7 @@ public class Character : MonoBehaviour
     public int life;
     public Transform skin;
     public Transform cam;
+    public Transform takeDamage;
 
     public Text heartCountText;
 
@@ -31,7 +32,7 @@ public class Character : MonoBehaviour
     public void PlayerDamage(int value)
     {
         life = life - value;
-        skin.GetComponent<Animator>().Play("PlayerDamage", 1);
+        skin.GetComponent<Animator>().Play("TakeDamage", 1);
         cam.GetComponent<Animator>().Play("CameraPlayerDamage", -1);
     }
 

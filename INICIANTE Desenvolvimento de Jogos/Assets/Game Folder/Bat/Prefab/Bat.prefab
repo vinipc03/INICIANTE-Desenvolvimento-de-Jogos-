@@ -202,3 +202,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   life: 1
   skin: {fileID: 8884862874035624346}
+  cam: {fileID: 0}
+  takeDamage: {fileID: 0}
+  heartCountText: {fileID: 0}

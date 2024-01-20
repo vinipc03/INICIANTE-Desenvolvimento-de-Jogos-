@@ -66949,22 +66949,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 910402654}
     m_Modifications:
-    - target: {fileID: 841391400120921375, guid: 37c8636edb5c6c041853f2dfe1be5387, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.009210712
-      objectReference: {fileID: 0}
-    - target: {fileID: 841391400120921375, guid: 37c8636edb5c6c041853f2dfe1be5387, type: 3}
-      propertyPath: m_Radius
-      value: 0.117598936
-      objectReference: {fileID: 0}
-    - target: {fileID: 841391400287336417, guid: 37c8636edb5c6c041853f2dfe1be5387, type: 3}
-      propertyPath: m_Radius
-      value: 0.11925437
-      objectReference: {fileID: 0}
-    - target: {fileID: 841391400287336417, guid: 37c8636edb5c6c041853f2dfe1be5387, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.042647373
-      objectReference: {fileID: 0}
+    - target: {fileID: 841391399039473723, guid: 37c8636edb5c6c041853f2dfe1be5387, type: 3}
+      propertyPath: takeDamage
+      value: 
+      objectReference: {fileID: 545734329}
     - target: {fileID: 841391400541980849, guid: 37c8636edb5c6c041853f2dfe1be5387, type: 3}
       propertyPath: m_LocalPosition.x
       value: 32.8
@@ -71533,6 +71521,7 @@ MonoBehaviour:
   life: 10
   skin: {fileID: 1311745715}
   cam: {fileID: 519420032}
+  takeDamage: {fileID: 545734329}
   heartCountText: {fileID: 181971071}
 --- !u!1 &2053123412
 GameObject:
