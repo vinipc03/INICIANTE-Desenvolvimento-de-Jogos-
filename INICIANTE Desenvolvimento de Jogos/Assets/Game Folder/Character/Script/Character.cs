@@ -26,7 +26,7 @@ public class Character : MonoBehaviour
             skin.GetComponent<Animator>().Play("Die", -1);
         }
 
-        heartCountText.text = "x" + life.ToString();
+        heartCountText.text = life.ToString();
     }
 
     public void PlayerDamage(int value)

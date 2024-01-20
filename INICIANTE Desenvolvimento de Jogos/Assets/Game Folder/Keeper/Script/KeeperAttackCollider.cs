@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class KeeperAttackCollider : MonoBehaviour
 {
+
+    public Transform player;
     // Start is called before the first frame update
     void Start()
     {
