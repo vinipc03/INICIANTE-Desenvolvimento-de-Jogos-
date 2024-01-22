@@ -6,6 +6,8 @@ public class FloorCollider : MonoBehaviour
 {
 
     public bool canJump;
+    public AudioSource audioSource;
+    public AudioClip groundedSound;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,7 @@ public class FloorCollider : MonoBehaviour
         if (collision.CompareTag("Floor"))
         {
             canJump = true;
+            audioSource.PlayOneShot(groundedSound, 0.3f);
         }
     }
 

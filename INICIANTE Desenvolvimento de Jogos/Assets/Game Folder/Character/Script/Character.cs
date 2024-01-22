@@ -10,6 +10,9 @@ public class Character : MonoBehaviour
     public Transform cam;
     public Transform takeDamage;
 
+    public AudioSource audioSource;
+    public AudioClip addHeart;
+
     public Text heartCountText;
 
     // Start is called before the first frame update
@@ -26,7 +29,11 @@ public class Character : MonoBehaviour
             skin.GetComponent<Animator>().Play("Die", -1);
         }
 
-        heartCountText.text = life.ToString();
+        if (transform.CompareTag("Player"))
+        {
+            heartCountText.text = life.ToString();
+        }
+        
     }
 
     public void PlayerDamage(int value)
@@ -34,11 +41,13 @@ public class Character : MonoBehaviour
         life = life - value;
         skin.GetComponent<Animator>().Play("TakeDamage", 1);
         cam.GetComponent<Animator>().Play("CameraPlayerDamage", -1);
+        GetComponent<PlayerController>().audioSource.PlayOneShot(GetComponent<PlayerController>().damageSound, 0.05f);
     }
 
     public void PlayerAddLife(int value)
     {
         life = life + value;
         skin.GetComponent<Animator>().Play("PlayerAddLife", 1);
+        audioSource.PlayOneShot(addHeart, 0.2f);
     }
 }

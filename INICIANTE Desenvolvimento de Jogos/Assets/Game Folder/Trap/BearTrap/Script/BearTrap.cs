@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BearTrap : MonoBehaviour
 {
+    public AudioSource audioSource;
+    public AudioClip clip;
 
     Transform player;
     public Transform skin;
@@ -24,6 +26,8 @@ public class BearTrap : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+
+            audioSource.PlayOneShot(clip);
             skin.GetComponent<Animator>().Play("Stuck", -1);
 
             collision.transform.position = transform.position;
