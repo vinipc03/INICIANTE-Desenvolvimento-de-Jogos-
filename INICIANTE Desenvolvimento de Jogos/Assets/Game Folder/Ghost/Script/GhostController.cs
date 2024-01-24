@@ -40,7 +40,7 @@ public class GhostController : MonoBehaviour
             {
                 transform.position = b.position;
             }
-            transform.position = Vector3.MoveTowards(transform.position, a.position, 8f * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, a.position, 10f * Time.deltaTime);
         }
     }
 
