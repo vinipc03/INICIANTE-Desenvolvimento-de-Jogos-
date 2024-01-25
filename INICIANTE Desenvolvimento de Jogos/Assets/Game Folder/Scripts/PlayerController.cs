@@ -65,6 +65,8 @@ public class PlayerController : MonoBehaviour
             skin.GetComponent<Animator>().Play("Player_dash", -1);
             rb.velocity = Vector2.zero;
             rb.AddForce(new Vector2(skin.localScale.x * 600, 0));
+            rb.gravityScale = 0;
+            Invoke("RestoreGravityScale", 0.3f);
         }
 
         //ATAQUE
@@ -131,5 +133,10 @@ public class PlayerController : MonoBehaviour
     public void DestroyPlayer()
     {
         Destroy(transform.gameObject);
+    }
+
+    void RestoreGravityScale()
+    {
+        rb.gravityScale = 6;
     }
 }
