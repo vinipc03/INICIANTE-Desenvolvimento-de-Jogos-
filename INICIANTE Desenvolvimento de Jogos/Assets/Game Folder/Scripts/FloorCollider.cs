@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class FloorCollider : MonoBehaviour
 {
-
-    public bool canJump;
     public AudioSource audioSource;
     public AudioClip groundedSound;
 
@@ -25,8 +23,7 @@ public class FloorCollider : MonoBehaviour
     {
         if (collision.CompareTag("Floor"))
         {
-            canJump = true;
-            audioSource.PlayOneShot(groundedSound, 0.3f);
+            audioSource.PlayOneShot(groundedSound, 0.2f);
         }
     }
 

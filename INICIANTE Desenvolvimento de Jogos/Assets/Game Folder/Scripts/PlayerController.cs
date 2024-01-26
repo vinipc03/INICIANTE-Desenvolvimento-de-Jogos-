@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
 
     public string currentLevel;
 
+    public LayerMask floorLayer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -98,11 +100,11 @@ public class PlayerController : MonoBehaviour
         }
 
         //PULO
-        if (Input.GetButtonDown("Jump") && floorCollider.GetComponent<FloorCollider>().canJump == true)
+        bool canJump = Physics2D.OverlapCircle(floorCollider.position, 0.2f, floorLayer);
+        if (canJump && Input.GetButtonDown("Jump") && comboTime> 0.5f)
         {
             skin.GetComponent<Animator>().Play("Player_jump", -1);
             rb.velocity = Vector2.zero;
-            floorCollider.GetComponent<FloorCollider>().canJump = false;
             //AO TERMINAR O JOGO VOLTAR PARA AULA 6 APLICAR CORREÇÃO NO JUMP
             rb.AddForce(new Vector2(0, 1000));
         }

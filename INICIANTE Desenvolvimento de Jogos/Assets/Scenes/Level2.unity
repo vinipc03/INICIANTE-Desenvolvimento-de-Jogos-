@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 167044786}
   - component: {fileID: 167044785}
   - component: {fileID: 167044784}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Front
   m_TagString: Floor
   m_Icon: {fileID: 0}
