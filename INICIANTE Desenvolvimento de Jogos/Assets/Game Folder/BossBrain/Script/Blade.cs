@@ -41,9 +41,9 @@ public class Blade : MonoBehaviour
             targetPosition = A.position;
         }
 
-        transform.position = Vector2.MoveTowards(transform.position, targetPosition, 5 * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, targetPosition, 8 * Time.deltaTime);
 
-        transform.Rotate(0, 0, -500 * Time.deltaTime);
+        transform.Rotate(0, 0, -600 * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
